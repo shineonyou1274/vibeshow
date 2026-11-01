@@ -38,6 +38,11 @@ a{color:var(--blue)}
 .brand .round{display:inline-flex;gap:4px;margin-top:8px}
 .brand .round i{width:22px;height:22px;border-radius:50%;background:#fff;border:2px solid #ffd3df;font:700 11px/18px var(--f-mono);text-align:center;color:#c9a0b0;font-style:normal}
 .brand .round i.on{background:var(--pink);border-color:var(--pink);color:#fff}
+.brand .round a{width:22px;height:22px;border-radius:50%;background:#fff;border:2px solid #ffd3df;font:700 11px/18px var(--f-mono);text-align:center;color:#c9a0b0;text-decoration:none;display:inline-block}
+.brand .round a.on{background:var(--pink);border-color:var(--pink);color:#fff}
+.brand .round a:hover,.brand .round a:focus-visible{background:#ffd3df;color:#5a1f33;outline:none}
+.brand .round i.soon{opacity:.45;cursor:default}
+.brand .hint{display:block;font-size:11px;color:var(--rail-muted);margin-top:4px}
 .grp{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;color:var(--rail-muted);padding:14px 20px 4px;text-transform:uppercase}
 .grp em{font-style:normal;color:var(--pink)}
 .rail nav a{position:relative;display:flex;gap:10px;align-items:baseline;padding:6px 16px 6px 38px;color:var(--rail-ink);text-decoration:none;font-size:14.5px;line-height:1.5;border-radius:0 14px 14px 0;margin-right:10px}
@@ -405,7 +410,8 @@ dialog.ss-cele{width:min(440px,calc(100vw - 30px));border-radius:22px;padding:30
     <div class="k">교원 연수 · 2시간 × 4회차</div>
     <b>생각하는 대로<br>말하는 대로, 바이브코딩</b>
     <span>1회차 · AI에게 일 맡기기</span>
-    <span class="round" aria-label="4회차 중 1회차"><i class="on">1</i><i>2</i><i>3</i><i>4</i></span>
+    <span class="round" aria-label="회차 이동"><a href="./" class="on" aria-current="page" title="1회차 · AI에게 일 맡기기">1</a><a href="2/" title="2회차 · 말하면 만들어지는 게임">2</a><i class="soon" title="3회차 · 준비 중">3</i><i class="soon" title="4회차 · 준비 중">4</i></span>
+    <span class="hint">숫자를 누르면 그 회차 자료로 이동</span>
   </div>
   <nav id="menu">
     <a href="#intro"><span class="n">00</span><span>오늘의 순서</span></a>
