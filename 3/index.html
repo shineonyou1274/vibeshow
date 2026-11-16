@@ -410,7 +410,7 @@ dialog.ss-cele{width:min(440px,calc(100vw - 30px));border-radius:22px;padding:30
     <div class="k">교원 연수 · 2시간 × 4회차</div>
     <b>생각하는 대로<br>말하는 대로, 바이브코딩</b>
     <span>3회차 · 말하며 만들고 사이트에 담기</span>
-    <span class="round" aria-label="회차 이동"><a href="../" title="1회차">1</a><a href="../2/" title="2회차">2</a><a href="./" class="on" aria-current="page" title="3회차">3</a><a href="../4/" title="4회차 · 피클 AI 비서">4</a></span>
+    <span class="round" aria-label="회차 이동"><a href="../" title="1회차">1</a><a href="../2/" title="2회차">2</a><a href="./" class="on" aria-current="page" title="3회차">3</a><i class="soon" id="round4-release" title="4회차 · 11월 21일 공개">4</i></span>
     <span class="hint">숫자를 누르면 그 회차 자료로 이동</span>
   </div>
   <nav id="menu"><a href="#intro"><span class="n">00</span><span>오늘의 순서</span></a><div class="grp"><em>대화</em> 첫마디부터</div><a href="#s1"><span class="n">3-1</span><span>말은 짧게, 대화는 계속</span></a><a href="#s2"><span class="n">3-2</span><span>사이트라는 집 만들기</span></a><a href="#s3"><span class="n">3-3</span><span>HTML 통째로 넣어 보기</span></a><a href="#s4"><span class="n">3-4</span><span>첫 도구: 오늘의 감정 체크</span></a><a href="#s5"><span class="n">3-5</span><span>두 번째 도구: 내 그림판</span></a><a href="#s6"><span class="n">3-6</span><span>잠깐 쉬어 가요</span></a><a href="#s7"><span class="n">3-7</span><span>세 번째 도구: 교과 메모리 카드</span></a><a href="#s8"><span class="n">3-8</span><span>네 번째 도구: 행성 탐험</span></a><a href="#s9"><span class="n">3-9</span><span>내 사이트 살펴보기</span></a><a href="#s10"><span class="n">3-10</span><span>대화가 막히면 이 말부터</span></a><a href="#s11"><span class="n">3-11</span><span>내가 만든 것 모아 보기</span></a></nav>
@@ -642,4 +642,4 @@ if(storageError){status.textContent='저장 사용할 수 없음';status.classLi
 render();if(loaded&&!location.hash&&state.last!=='intro')go(state.last,false);if(window.innerWidth<=820&&current!=='intro')requestAnimationFrame(function(){toolbar.scrollIntoView({block:'start'})});
 })();
 
-</script></body></html>
+</script><script id="round4-release-script">(function(){var at=1795186800000;function update(){var el=document.getElementById("round4-release");if(!el||Date.now()<at)return;var a=document.createElement("a");a.href="../4/";a.title="4회차 · 피클 AI 비서";a.textContent="4";el.replaceWith(a);}update();setInterval(update,1000);document.addEventListener("visibilitychange",update);})();</script></body></html>
